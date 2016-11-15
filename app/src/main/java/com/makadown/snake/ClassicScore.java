@@ -31,6 +31,18 @@ public class ClassicScore extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_classic_score);
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+        if(getSupportActionBar()!= null )
+        {
+            getSupportActionBar().hide();
+        }
+        initScore();
+        initHighScore();
+        initPlayAgain();
+        initMainMenu();
+        initTitle();
     }
 
     private void initScore()
@@ -105,7 +117,7 @@ public class ClassicScore extends AppCompatActivity {
             highScore = lastScore;
         }
 
-        highScoreTextView.setText(String.valueOf(highScore));
+        highScoreTextView.setText("HIGH: " + String.valueOf(highScore));
         highScoreTextView.setTextColor(Color.WHITE);
         highScoreTextView.setGravity(Gravity.CENTER);
         highScoreTextView.setBackgroundResource(R.mipmap.menu_options);
@@ -217,7 +229,7 @@ public class ClassicScore extends AppCompatActivity {
                         }, GameSettings.START_NEW_ACTIVITY_DURATION );
                     }
                 });
-                mainMenuImageView.startAnimation(animation);
+
             }
 
             @Override
@@ -225,6 +237,8 @@ public class ClassicScore extends AppCompatActivity {
 
             }
         });
+
+        mainMenuImageView.startAnimation(animation);
     }
 
     private void initTitle()
