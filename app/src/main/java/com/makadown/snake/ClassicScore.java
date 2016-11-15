@@ -31,7 +31,6 @@ public class ClassicScore extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_classic_score);
-
     }
 
     private void initScore()
