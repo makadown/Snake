@@ -117,7 +117,7 @@ public class ClassicScore extends AppCompatActivity {
             highScore = lastScore;
         }
 
-        highScoreTextView.setText("HIGH: " + String.valueOf(highScore));
+        highScoreTextView.setText("High: " + String.valueOf(highScore));
         highScoreTextView.setTextColor(Color.WHITE);
         highScoreTextView.setGravity(Gravity.CENTER);
         highScoreTextView.setBackgroundResource(R.mipmap.menu_options);
