@@ -36,6 +36,8 @@
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".ClassicScore">
         </activity>
+        <activity android:name=".NoWallsScore">
+        </activity>
     </application>
 
 </manifest>
