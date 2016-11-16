@@ -38,6 +38,8 @@
         </activity>
         <activity android:name=".NoWallsScore">
         </activity>
+        <activity android:name=".BombScore">
+        </activity>
     </application>
 
 </manifest>

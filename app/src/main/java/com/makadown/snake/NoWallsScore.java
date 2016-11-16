@@ -64,7 +64,7 @@ public class NoWallsScore extends AppCompatActivity {
             public void onAnimationEnd(Animation animation) {
                 SharedPreferences preferences = getApplicationContext().getSharedPreferences(
                         GameSettings.PREFS_NAME, Context.MODE_PRIVATE);
-                int playersScore = preferences.getInt("HighScoreNoWalls", 0);
+                int playersScore = preferences.getInt("Score", 0);
                 scoreTextView.setText("Score: " + String.valueOf(playersScore));
                 scoreTextView.setTextColor(Color.WHITE);
                 scoreTextView.setGravity(Gravity.CENTER);
@@ -146,7 +146,7 @@ public class NoWallsScore extends AppCompatActivity {
                 playAgainImageView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intentClassic = new Intent(NoWallsScore.this, ClassicSnake.class);
+                        Intent intentClassic = new Intent(NoWallsScore.this, NoWallsSnake.class);
                         intentClassic.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intentClassic);
                     }

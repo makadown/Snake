@@ -370,6 +370,7 @@ public class ClassicSnake extends AppCompatActivity {
                                         // Player
                                         Rect rc1 = new Rect();
                                         rc1.set((int) left, (int) top, (int) right, (int) bottom);
+                                        head.getHitRect(rc1);
 
                                         // Food item
                                         Rect rc2 = new Rect();
