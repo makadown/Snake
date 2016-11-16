@@ -15,8 +15,11 @@ public final class GameSettings {
 
     public static final int NUMBER_BOMBS = 5;
 
-    public static final String MY_AD_UNIT_ID = "TBA";
+    //Generado en https://apps.admob.com con mi cuenta. Para produccion
+    public static final String MY_AD_UNIT_ID = "ca-app-pub-2640906402985012/4058557881";
 
+    // Para Pruebas
+    //public static final String MY_AD_UNIT_ID = "0252970BD5B0C9F3653CAE193D83C263";
     // flash animation for the app
     public static final int ANIMATION_OPEN_BUTTON_DURATION = 400;
     public static final int ANIMATION_CLOSE_BUTTON_DURATION = 400;
@@ -39,4 +42,11 @@ public final class GameSettings {
 
     public static final String PREFS_NAME = "SnakePreferences";
     public static final int LAYOUT_MARGIN = 0;
+
+    public static final String PLAYER_SCORE = "Score";
+    public static final String HIGH_SCORE_CLASSIC = "HighScoreClassic";
+    public static final String HIGH_SCORE_NO_WALLS  = "HighScoreNoWalls";
+    public static final String HIGH_SCORE_BOMB = "HighScoreBomb";
+    public static final String PLAY_MUSIC = "PlayMusic";
+    public static final String USE_BUTTON_CONTROLS = "UseButtonControls";
 }

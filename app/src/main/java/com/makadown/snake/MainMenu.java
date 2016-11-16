@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 public class MainMenu extends AppCompatActivity {
 
@@ -35,6 +36,8 @@ public class MainMenu extends AppCompatActivity {
         setContentView(R.layout.main_menu);
         snakeLayout = (RelativeLayout) findViewById(R.id.snake_layout);
 
+        MobileAds.initialize(getApplicationContext(), GameSettings.MY_AD_UNIT_ID );
+
         View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
@@ -48,7 +51,15 @@ public class MainMenu extends AppCompatActivity {
         adView.setAdUnitId(GameSettings.MY_AD_UNIT_ID);
         snakeLayout.addView(adView);
 
-        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        //Log.println(Log.INFO, "Main Menu", "Usando Ad unit id " + GameSettings.MY_AD_UNIT_ID);
+
+        /*Esto es para decirle a google que estoy haciendo pruebas, en caso de que accidentalmente
+        * haga click en mis propios Ads (google bannea permanentemente cuentas que intentan ganar dinero
+        * haciendo clicks en sus propios Ads) */
+        //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+
+
+        AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
 
         initClassic();
