@@ -55,7 +55,9 @@ public class MainMenu extends AppCompatActivity {
 
         /*Esto es para decirle a google que estoy haciendo pruebas, en caso de que accidentalmente
         * haga click en mis propios Ads (google bannea permanentemente cuentas que intentan ganar dinero
-        * haciendo clicks en sus propios Ads) */
+        * haciendo clicks en sus propios Ads)
+        * DEJAR ACTIVO ESTE SIEMPRE QUE SE HAGAN PRUEBAS!!!!
+        * */
         //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
 
 
