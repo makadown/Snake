@@ -14,7 +14,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class Settings extends AppCompatActivity {
+public class Settings extends AppCompatActivity
+{
 
     private TextView titleLeft;
     private TextView titleRight;
