@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "307709135076",
+    "firebase_url": "https://makadowns-snake-game.firebaseio.com",
+    "project_id": "makadowns-snake-game",
+    "storage_bucket": "makadowns-snake-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307709135076:android:7f48b23dbb2bb51e",
+        "android_client_info": {
+          "package_name": "com.makadown.snake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307709135076-852b8daka51s9l5akscvaqccc9382pc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiwEwYlSLpwjfE2-g-MW1ENkc6UxyTUns"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
